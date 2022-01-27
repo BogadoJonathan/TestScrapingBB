@@ -1,16 +1,11 @@
 from bs4 import BeautifulSoup
 from funciones import guardarEnJSON, pageContent, obtenerDatos
 
-
-
-
 baseDeDatos = {}
-
 
 url = 'https://www.starz.com'
 extensionSeries = '/ar/es/view-all/blocks/1523514'
 extensionPeliculas = '/ar/es/view-all/blocks/1523534'
-
 
 pageSeries = pageContent(url+extensionSeries,5) #examina y guarda pagina oficial de las series
 pagePeliculas = pageContent(url+extensionPeliculas,5)
